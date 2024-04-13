@@ -446,8 +446,6 @@ img {
 
     .item-cate{
         display: flex;
-        border: 1px dashed var(--mainColor);
-        border-radius: 10px;
         overflow: hidden;
         border: 1px dashed #72a834;
         border-radius: 10px;
@@ -467,12 +465,25 @@ img {
         background-color: #F0F6EA;
     }
 
-    .image{
-    
+    .image {
+        align-items: center;
+        position: relative;
+        height: auto !important;
+        padding-bottom: 100%;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
     }
 
-    .image-prod{
-    
+    .image-prod {
+        width: auto !important;
+        max-height: 90%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
     .box-cont-cate{
@@ -491,13 +502,19 @@ img {
         min-width: 70px;
     }
 
-    .image-thumb{
+    .image-thumb-one {
+        padding-bottom: 100%;
+    }
+
+    .image-thumb {
         display: flex;
         position: relative;
         border-bottom: 1px dashed #72a834;
+        width: 100%;
+        align-items: center;
     }
 
-    .iamge-prod{
+    .image-prod{
     
     }
 
